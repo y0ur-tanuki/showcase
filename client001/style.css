@@ -161,10 +161,13 @@ noscript.no-js-noscript {
         --img_sz: calc(var(--size) + var(--gap));
         --gap: 2em;
     }
+<<<<<<< HEAD
 
     .content {
         font-size: clamp(.2rem, .5rem + 1vw, 2rem);
     }
+=======
+>>>>>>> d048a9802ca7acde0a595871fa3a06c9c89244d7
 }
 
 @media (width < 720px) and (aspect-ratio < 1/1) {
