@@ -27,7 +27,7 @@ const img_lst = {
         "title" : "Hippeastrum",
         "content" : "Once a herald of bold, trumpet-like vibrance, this Amaryllis now rests in a state of elegant decay. Its petals, once succulent and bright crimson, have folded into paper-thin whispers of deep plum and parched violet. The graceful, arching stems are now amber and brittle, holding the weight of memory in their curves. It is a portrait of lingering beauty—where the bloom has traded its scent for a timeless, sculpted silhouette of quiet resilience.",
         "currency" : "",
-        "cost" : "Priceless",
+        "cost" : "Priceless Gem",
         "img" : "images/img4.png",
         "bg" : "#643f4d"
     },
@@ -70,12 +70,14 @@ function construct_page(num) {
                 <img src="${curr["img"]}">
                 <div class="panel-2 block">
                     <div class="title-2">${curr["title"]}</div>
+                    <div class="price ignore" data-currency="${curr["currency"]}">${curr["cost"]}</div>
                 </div>
             </figure>
             <figure class="next">
                 <img src="${nxtt["img"]}">
                 <div class="panel-2 block">
                     <div class="title-2">${nxtt["title"]}</div>
+                    <div class="price ignore" data-currency="${nxtt["currency"]}">${curr["cost"]}</div>
                 </div>
             </figure>
         </div>`;
@@ -114,6 +116,7 @@ function change() {
                 <img src="${nxtt2["img"]}">
                 <div class="panel-2 block">
                     <div class="title-2">${nxtt2["title"]}</div>
+                    <div class="price ignore" data-currency="${nxtt2["currency"]}">${nxtt2["cost"]}</div>
                 </div>
             </figure>`;
 
