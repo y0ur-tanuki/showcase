@@ -162,9 +162,9 @@ noscript.no-js-noscript {
         --gap: 2em;
     }
 
-    .content {
+    /* .content {
         font-size: clamp(.2rem, .5rem + 1vw, 2rem);
-    }
+    } */
 }
 
 @media (width < 720px) and (aspect-ratio < 1/1) {
